@@ -27,7 +27,7 @@ Para que nuestro programa sepa qué preguntar, usamos una **lista de diccionario
 
 Crea un archivo llamado `examen.py` y pega el siguiente código. Lee los comentarios (el texto que empieza por `#`) para entender qué hace cada parte:
 
-```
+```python
 import streamlit as st
 
 # 1. EL ARCHIVADOR (Nuestra base de datos de preguntas)

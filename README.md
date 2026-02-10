@@ -16,7 +16,7 @@ Para que nuestro programa sepa qué preguntar, usamos una **lista de diccionario
 
 - **La Lista `[ ]`**: Es el mueble entero. Cada cajón tiene un número de posición (empezando siempre por el **0**).
   
-- **El Diccionario `{ }`**: Es la ficha que hay dentro de cada cajón. Cada ficha tiene etiquetas (llamadas **claves**) como `"texto"`, `"opciones"` o `"correcta"`.
+- **El Diccionario `{ }`**: Es la ficha (en nuestro caso, preguntas) que hay dentro de cada cajón. Cada ficha tiene etiquetas (llamadas **claves**) como `"texto"`, `"opciones"` o `"correcta"`.
   
 
 **¿Cómo sacamos la información?** Si quieres la pregunta del segundo cajón, escribirías: `preguntas[1]["texto"]`. *(Recuerda: el índice 1 es el segundo cajón porque en programación empezamos a contar desde el cero).*
@@ -31,7 +31,7 @@ Crea un archivo llamado `examen.py` y pega el siguiente código. Lee los comenta
 import streamlit as st
 
 # 1. EL ARCHIVADOR (Nuestra base de datos de preguntas)
-# Cada bloque entre { } es una pregunta distinta. Creamos la lista
+# Cada bloque entre { } es una pregunta distinta. Cada pregunta es un diccionario de 3 entradas (texto, opciones, correcta). Creamos la lista:
 preguntas = [
     {
         "texto": "¿Cuál es el lenguaje de programación que estamos usando?",
@@ -101,6 +101,7 @@ if boton_enviar:
         st.error(f"Has sacado un {nota}. ¡Toca estudiar un poco más!")
 ```
 ## 📝 3. Te toca a tí
-- Haz que la nota esté redondeada
+- Haz que la nota esté redondeada. Investiga en la documentación o con la IA qué función se usa
 - Añade 10 preguntas en total
 - Añade varios feedback en función de la nota: muy insuficiente (menos de 2), insuficiente (entre 3 y 5), suficiente (entre 5 y 6), bien (entre 6 y 7), notable (entre 7 y 9), sobresaliente (entre 9 y 10), excelente (10)
+- Para cada tramo, añade un efecto (animación). Consulta la documentación para ver qué animaciones existen

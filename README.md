@@ -61,14 +61,13 @@ with st.form("quiz_form"):
 
     # Aquí guardaremos las respuestas que elija el alumno. Será una lista.
     respuestas_usuario = []
-
+    
     # Recorremos el archivador usando un bucle 'for' para crear las preguntas
-    # Con sus opciones
     for pregunta in preguntas:
         st.subheader(pregunta["texto"]) # Ponemos el texto de la pregunta
 
         # Creamos los botones de opción (radio)
-        eleccion = st.radio("Elige una opción:", pregunta["opciones"], key=p["texto"])
+        eleccion = st.radio("Elige una opción:", pregunta["opciones"], key=pregunta["texto"])
 
         # Guardamos la elección en nuestra lista usando append ()
         respuestas_usuario.append(eleccion)
@@ -81,7 +80,7 @@ with st.form("quiz_form"):
 if boton_enviar:
     aciertos = 0
     # Total es número de preguntas (usa el método len)
-    total = len(preguntas)
+    total = len(preguntas)
 
     # Comparamos las respuestas del usuario con las 'correctas' del archivador
     for i in range(total):

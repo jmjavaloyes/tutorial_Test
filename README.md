@@ -22,8 +22,8 @@ Para que nuestro programa sepa qué preguntar, usamos una **lista de diccionario
 **¿Cómo sacamos la información?** Si quieres la pregunta del segundo cajón, escribirías: `preguntas[1]["texto"]`. *(Recuerda: el índice 1 es el segundo cajón porque en programación empezamos a contar desde el cero).* También puedes recorrer la lista con un bucle `for`:
 ```python
 for pregunta in preguntas:
-  # Cada `pregunta` de la lista de `preguntas` es un diccionario
-  # Por tanto, se accede poniendo el nombre de la *clave* (la entrada del diccionario)
+  # Cada pregunta de la lista de preguntas es un diccionario
+  # Por tanto, se accede poniendo el nombre de la clave (la entrada del diccionario)
   st.subheader(pregunta["texto"]) # Ponemos el texto de la pregunta
 ```
 

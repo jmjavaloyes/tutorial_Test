@@ -112,4 +112,4 @@ if boton_enviar:
 - (4 puntos) Crea un examen de 9 preguntas en total
 - (2 puntos) Añade varios feedback en función de la nota: muy insuficiente (menos de 2), insuficiente (entre 3 y 5), suficiente (entre 5 y 6), bien (entre 6 y 7), notable (entre 7 y 9), sobresaliente (entre 9 y 10), excelente (10). Añade al menos una animación para los tramos en los que el examen se aprueba
 - (1 punto) Para calcular la nota, las respuestas incorrectas restan (dejar en blanco, no suma)
-- (2 punto) Crea un tab con un informe en Markdown de las preguntas correctas e incorrectas. Tienes información del tab aquí: https://docs.streamlit.io/develop/api-reference/layout/st.tabs
+- (2 punto) Crea un tab con un informe en Markdown de las preguntas correctas e incorrectas. Tienes información del tab aquí: https://docs.streamlit.io/develop/api-reference/layout/st.tabs y para el texto en markdown, puedes consultar la función  [st.markdown](https://docs.streamlit.io/develop/api-reference/text/st.markdown)
